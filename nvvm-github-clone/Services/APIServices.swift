@@ -13,6 +13,8 @@ class APIServices {
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             
+            print("fetchUserRepos")
+            
             guard error == nil else {
                 print("An error occure: \(error!.localizedDescription)")
                 completion(nil)
@@ -53,6 +55,8 @@ class APIServices {
     func fetchRepoDetail(url: URL, completion: @escaping (RepoDetail?) -> ()) {
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
+            
+            print("fetchRepoDetail")
             
             guard error == nil else {
                 print("An error occure: \(error!.localizedDescription)")
@@ -95,6 +99,8 @@ class APIServices {
 
         URLSession.shared.dataTask(with: url) { (data, response, error) in
 
+            print("fetchRepoBranches")
+            
             guard error == nil else {
                 print("An error occure: \(error!.localizedDescription)")
                 completion(nil)
@@ -135,7 +141,7 @@ class APIServices {
     func fetchUserInfo(url: URL, completion: @escaping (UserInfo?) -> ()) {
 
         URLSession.shared.dataTask(with: url) { (data, response, error) in
-
+            
             guard error == nil else {
                 print("An error occure: \(error!.localizedDescription)")
                 completion(nil)

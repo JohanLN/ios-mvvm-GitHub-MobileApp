@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct Search: View {
+    
+    @State private var selected = 1
+    @State private var text = ""
+    
     var body: some View {
         ZStack {
             Color.background.ignoresSafeArea()
-            Text("Search Tab.")
-                .font(.system(size: 30.0, weight: .bold, design: .rounded))
+            VStack {
+                SearchButtonNavigation(selected: $selected)
+                    .padding(.bottom)
+                SearchBar(selected: selected, text: $text)
+            }
         }
     }
 }

@@ -41,8 +41,7 @@ extension Color {
     
     static var stroke: Color {
         return Color("Stroke")
-    }
-    
+    }   
 }
 
 extension UIColor {
@@ -78,7 +77,6 @@ extension UIColor {
     static var stroke: UIColor {
         return UIColor(named: "Stroke")!
     }
-
 }
 
 extension Color {

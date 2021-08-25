@@ -18,9 +18,9 @@ class RepoDetailViewModel: ObservableObject {
     var repoName: String
 
     
-    @Published var repoDetail = RepoDetail(id: 0, name: "", fullName: "", privateRepo: false, owner: RepoDetail.Owner(id: 0, login: "", avatarUrl: ""), description: "", fork: false, repoUrl: "", createdAt: "", updatedAt: "", size: 0, star: 0, language: "", forkCount: 0, sub: 0)
+    @Published var repoDetail = RepoDetail(id: 0, name: "Test1st", fullName: "Test/Test1st", privateRepo: true, owner: RepoDetail.Owner(id: 0, login: "Test", avatarUrl: ""), description: "This is a fake repository.", fork: false, repoUrl: "URL", createdAt: "25/08/2021", updatedAt: "25/08/2021", size: 100, star: 3, language: "Swift", forkCount: 1, sub: 15)
     
-    @Published var repoBranches = [RepoBranches]()
+    @Published var repoBranches = [RepoBranches(name: "Test1st", protected: false)]
     
     private func fetchRepoDetail() {
         let username = "johanln"
@@ -37,7 +37,7 @@ class RepoDetailViewModel: ObservableObject {
     }
     
     private func fetchRepoBranches() {
-        let username = "quemenerjeremy"
+        let username = "johanln"
         guard let repoBranchesUrl = URL(string: "https://api.github.com/repos/\(username)/\(self.repoName)/branches") else {
             fatalError("Url is not correct.")
         }

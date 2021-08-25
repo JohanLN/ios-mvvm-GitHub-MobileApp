@@ -13,10 +13,10 @@ class UserInfoViewModel: ObservableObject {
         fetchUserInfo()
     }
     
-    @Published var userInfo = UserInfo(login: "", avatarUrl: "", bio: "", followers: 0, following: 0, createdAt: "")
+    @Published var userInfo = UserInfo(login: "Test", avatarUrl: "", bio: "This is a fake account.", followers: 15, following: 165, createdAt: "25/08/2021")
     
     private func fetchUserInfo() {
-        let username = "quemenerjeremy"
+        let username = "johanln"
         guard let userInfoUrl = URL(string: "https://api.github.com/users/\(username)") else {
             fatalError("Url is not correct.")
         }

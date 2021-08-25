@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		844A547626D3CBDB00835F25 /* RepoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A547526D3CBDB00835F25 /* RepoDetailViewModel.swift */; };
 		844A547826D3CBE700835F25 /* RepoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A547726D3CBE700835F25 /* RepoDetail.swift */; };
+		8460A1CF26D678A50033BDC2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8460A1CE26D678A50033BDC2 /* Launch Screen.storyboard */; };
+		8460A1D326D681C10033BDC2 /* SearchButtonNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460A1D226D681C10033BDC2 /* SearchButtonNavigation.swift */; };
+		8460A1D526D68F410033BDC2 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460A1D426D68F410033BDC2 /* SearchBar.swift */; };
 		8465855A26CD514700A8B6A7 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465855926CD514700A8B6A7 /* ColorExtension.swift */; };
 		8465855E26CD54AF00A8B6A7 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465855D26CD54AF00A8B6A7 /* Home.swift */; };
 		8465856026CD552100A8B6A7 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465855F26CD552100A8B6A7 /* Search.swift */; };
@@ -42,6 +45,9 @@
 /* Begin PBXFileReference section */
 		844A547526D3CBDB00835F25 /* RepoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailViewModel.swift; sourceTree = "<group>"; };
 		844A547726D3CBE700835F25 /* RepoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetail.swift; sourceTree = "<group>"; };
+		8460A1CE26D678A50033BDC2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		8460A1D226D681C10033BDC2 /* SearchButtonNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButtonNavigation.swift; sourceTree = "<group>"; };
+		8460A1D426D68F410033BDC2 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		8465855926CD514700A8B6A7 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		8465855D26CD54AF00A8B6A7 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		8465855F26CD552100A8B6A7 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
@@ -85,6 +91,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8460A1D026D6818B0033BDC2 /* SearchTab */ = {
+			isa = PBXGroup;
+			children = (
+				8460A1D126D681950033BDC2 /* Components */,
+				8465855F26CD552100A8B6A7 /* Search.swift */,
+			);
+			path = SearchTab;
+			sourceTree = "<group>";
+		};
+		8460A1D126D681950033BDC2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8460A1D226D681C10033BDC2 /* SearchButtonNavigation.swift */,
+				8460A1D426D68F410033BDC2 /* SearchBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		8465856E26CE846000A8B6A7 /* HomeTab */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +177,7 @@
 				846F576426CD04A200B5595B /* Assets.xcassets */,
 				846F576926CD04A200B5595B /* Info.plist */,
 				846F576626CD04A200B5595B /* Preview Content */,
+				8460A1CE26D678A50033BDC2 /* Launch Screen.storyboard */,
 			);
 			path = "nvvm-github-clone";
 			sourceTree = "<group>";
@@ -168,11 +193,11 @@
 		846F576F26CD04A900B5595B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8460A1D026D6818B0033BDC2 /* SearchTab */,
 				848DCA9F26D4F31400118B95 /* RepoDetail */,
 				8465857226CE88A300A8B6A7 /* ProfileTab */,
 				8465856E26CE846000A8B6A7 /* HomeTab */,
 				846F577426CD04E400B5595B /* TabNavigation.swift */,
-				8465855F26CD552100A8B6A7 /* Search.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -292,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8460A1CF26D678A50033BDC2 /* Launch Screen.storyboard in Resources */,
 				846F576826CD04A200B5595B /* Preview Assets.xcassets in Resources */,
 				846F576526CD04A200B5595B /* Assets.xcassets in Resources */,
 			);
@@ -321,11 +347,13 @@
 				8465857726CE9D7500A8B6A7 /* ProfileButtonNavigation.swift in Sources */,
 				8465858026CEB87B00A8B6A7 /* ProfileProjects.swift in Sources */,
 				8465857926CE9FF000A8B6A7 /* RepoCard.swift in Sources */,
+				8460A1D526D68F410033BDC2 /* SearchBar.swift in Sources */,
 				844A547626D3CBDB00835F25 /* RepoDetailViewModel.swift in Sources */,
 				8465856026CD552100A8B6A7 /* Search.swift in Sources */,
 				8465855E26CD54AF00A8B6A7 /* Home.swift in Sources */,
 				8465856426CD587D00A8B6A7 /* UserReposCard.swift in Sources */,
 				8465857E26CEB81F00A8B6A7 /* ProfileRepositories.swift in Sources */,
+				8460A1D326D681C10033BDC2 /* SearchButtonNavigation.swift in Sources */,
 				8465857126CE85EE00A8B6A7 /* UserEventCard.swift in Sources */,
 				844A547826D3CBE700835F25 /* RepoDetail.swift in Sources */,
 				846F576126CD04A100B5595B /* nvvm_github_cloneApp.swift in Sources */,

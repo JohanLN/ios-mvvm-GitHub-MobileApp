@@ -13,7 +13,7 @@ struct RepoBranchesComponent: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Repositories")
+            Text("Branches")
                 .font(.system(size: 22.0, weight: .bold, design: .rounded))
                 .padding(.bottom)
             VStack {
