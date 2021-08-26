@@ -14,7 +14,7 @@ struct TabNavigation: View {
     var body: some View {
         TabView(selection: $tabSelection) {
             NavigationView {
-                Home(goToProfile: $tabSelection)
+                Home()
                     .navigationBarTitle("")
                     .navigationBarHidden(true)
             }
@@ -34,7 +34,7 @@ struct TabNavigation: View {
             }
             .tag(1)
             NavigationView {
-                Profile()
+                Profile(username: "johanln")
                     .navigationBarTitle("")
                     .navigationBarHidden(true)
             }

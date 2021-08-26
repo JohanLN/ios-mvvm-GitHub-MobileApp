@@ -29,10 +29,20 @@
 		8465857E26CEB81F00A8B6A7 /* ProfileRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465857D26CEB81F00A8B6A7 /* ProfileRepositories.swift */; };
 		8465858026CEB87B00A8B6A7 /* ProfileProjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465857F26CEB87B00A8B6A7 /* ProfileProjects.swift */; };
 		8465858226CEB8CA00A8B6A7 /* ProfilePackages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465858126CEB8CA00A8B6A7 /* ProfilePackages.swift */; };
+		8468DC4926D79BE9005209F0 /* FormatDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468DC4826D79BE9005209F0 /* FormatDate.swift */; };
+		8468DC4B26D7C68A005209F0 /* SearchUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468DC4A26D7C68A005209F0 /* SearchUsers.swift */; };
+		8468DC4D26D7C6A2005209F0 /* SearchUsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468DC4C26D7C6A2005209F0 /* SearchUsersViewModel.swift */; };
+		8468DC4F26D7C9D9005209F0 /* ListOfUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468DC4E26D7C9D9005209F0 /* ListOfUsers.swift */; };
+		8468DC5126D7D254005209F0 /* ListOfIssues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468DC5026D7D254005209F0 /* ListOfIssues.swift */; };
+		8468DC5326D7D260005209F0 /* SearchIssues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468DC5226D7D260005209F0 /* SearchIssues.swift */; };
+		8468DC5526D7D270005209F0 /* SearchIssuesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468DC5426D7D270005209F0 /* SearchIssuesViewModel.swift */; };
 		846F576126CD04A100B5595B /* nvvm_github_cloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846F576026CD04A100B5595B /* nvvm_github_cloneApp.swift */; };
 		846F576526CD04A200B5595B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846F576426CD04A200B5595B /* Assets.xcassets */; };
 		846F576826CD04A200B5595B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846F576726CD04A200B5595B /* Preview Assets.xcassets */; };
 		846F577526CD04E400B5595B /* TabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846F577426CD04E400B5595B /* TabNavigation.swift */; };
+		847F116326D77E7D00CDCFA8 /* ListOfRepos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F116226D77E7D00CDCFA8 /* ListOfRepos.swift */; };
+		847F116526D7857400CDCFA8 /* SearchRepos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F116426D7857400CDCFA8 /* SearchRepos.swift */; };
+		847F116726D7865E00CDCFA8 /* SearchReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F116626D7865E00CDCFA8 /* SearchReposViewModel.swift */; };
 		848DCAA226D4F3AC00118B95 /* RepoInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DCAA126D4F3AC00118B95 /* RepoInfos.swift */; };
 		848DCAA426D4F4BC00118B95 /* RepoBranchesComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DCAA326D4F4BC00118B95 /* RepoBranchesComponent.swift */; };
 		848DCAA626D5404D00118B95 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DCAA526D5404D00118B95 /* UserInfo.swift */; };
@@ -65,12 +75,22 @@
 		8465857D26CEB81F00A8B6A7 /* ProfileRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRepositories.swift; sourceTree = "<group>"; };
 		8465857F26CEB87B00A8B6A7 /* ProfileProjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProjects.swift; sourceTree = "<group>"; };
 		8465858126CEB8CA00A8B6A7 /* ProfilePackages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePackages.swift; sourceTree = "<group>"; };
+		8468DC4826D79BE9005209F0 /* FormatDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatDate.swift; sourceTree = "<group>"; };
+		8468DC4A26D7C68A005209F0 /* SearchUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUsers.swift; sourceTree = "<group>"; };
+		8468DC4C26D7C6A2005209F0 /* SearchUsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUsersViewModel.swift; sourceTree = "<group>"; };
+		8468DC4E26D7C9D9005209F0 /* ListOfUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfUsers.swift; sourceTree = "<group>"; };
+		8468DC5026D7D254005209F0 /* ListOfIssues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfIssues.swift; sourceTree = "<group>"; };
+		8468DC5226D7D260005209F0 /* SearchIssues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchIssues.swift; sourceTree = "<group>"; };
+		8468DC5426D7D270005209F0 /* SearchIssuesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchIssuesViewModel.swift; sourceTree = "<group>"; };
 		846F575D26CD04A100B5595B /* nvvm-github-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nvvm-github-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		846F576026CD04A100B5595B /* nvvm_github_cloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nvvm_github_cloneApp.swift; sourceTree = "<group>"; };
 		846F576426CD04A200B5595B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		846F576726CD04A200B5595B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		846F576926CD04A200B5595B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846F577426CD04E400B5595B /* TabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigation.swift; sourceTree = "<group>"; };
+		847F116226D77E7D00CDCFA8 /* ListOfRepos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfRepos.swift; sourceTree = "<group>"; };
+		847F116426D7857400CDCFA8 /* SearchRepos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepos.swift; sourceTree = "<group>"; };
+		847F116626D7865E00CDCFA8 /* SearchReposViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchReposViewModel.swift; sourceTree = "<group>"; };
 		848DCAA126D4F3AC00118B95 /* RepoInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoInfos.swift; sourceTree = "<group>"; };
 		848DCAA326D4F4BC00118B95 /* RepoBranchesComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoBranchesComponent.swift; sourceTree = "<group>"; };
 		848DCAA526D5404D00118B95 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
@@ -105,6 +125,9 @@
 			children = (
 				8460A1D226D681C10033BDC2 /* SearchButtonNavigation.swift */,
 				8460A1D426D68F410033BDC2 /* SearchBar.swift */,
+				847F116226D77E7D00CDCFA8 /* ListOfRepos.swift */,
+				8468DC4E26D7C9D9005209F0 /* ListOfUsers.swift */,
+				8468DC5026D7D254005209F0 /* ListOfIssues.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -208,6 +231,9 @@
 				8465856726CE52B500A8B6A7 /* UserRepos.swift */,
 				844A547726D3CBE700835F25 /* RepoDetail.swift */,
 				848DCAA526D5404D00118B95 /* UserInfo.swift */,
+				847F116426D7857400CDCFA8 /* SearchRepos.swift */,
+				8468DC4A26D7C68A005209F0 /* SearchUsers.swift */,
+				8468DC5226D7D260005209F0 /* SearchIssues.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -218,6 +244,9 @@
 				8465856C26CE534000A8B6A7 /* UserReposViewModel.swift */,
 				844A547526D3CBDB00835F25 /* RepoDetailViewModel.swift */,
 				848DCAA726D5405F00118B95 /* UserInfoViewModel.swift */,
+				847F116626D7865E00CDCFA8 /* SearchReposViewModel.swift */,
+				8468DC4C26D7C6A2005209F0 /* SearchUsersViewModel.swift */,
+				8468DC5426D7D270005209F0 /* SearchIssuesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -238,6 +267,7 @@
 				8465857A26CEB64600A8B6A7 /* ImageUriExtension.swift */,
 				84CF917D26D39BD5003E6962 /* LanguageRepoColors.swift */,
 				84CF918126D3A4B5003E6962 /* ViewExtension.swift */,
+				8468DC4826D79BE9005209F0 /* FormatDate.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -330,7 +360,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8468DC5326D7D260005209F0 /* SearchIssues.swift in Sources */,
+				8468DC5126D7D254005209F0 /* ListOfIssues.swift in Sources */,
+				8468DC4926D79BE9005209F0 /* FormatDate.swift in Sources */,
 				8465857526CE9C8900A8B6A7 /* ProfileHeaderSummary.swift in Sources */,
+				8468DC5526D7D270005209F0 /* SearchIssuesViewModel.swift in Sources */,
 				848DCAA426D4F4BC00118B95 /* RepoBranchesComponent.swift in Sources */,
 				8465855A26CD514700A8B6A7 /* ColorExtension.swift in Sources */,
 				8465857B26CEB64600A8B6A7 /* ImageUriExtension.swift in Sources */,
@@ -341,9 +375,12 @@
 				84CF918226D3A4B5003E6962 /* ViewExtension.swift in Sources */,
 				848DCAA826D5405F00118B95 /* UserInfoViewModel.swift in Sources */,
 				8465856626CD609100A8B6A7 /* ClickableCard.swift in Sources */,
+				847F116526D7857400CDCFA8 /* SearchRepos.swift in Sources */,
 				846F577526CD04E400B5595B /* TabNavigation.swift in Sources */,
 				8465856A26CE530F00A8B6A7 /* APIServices.swift in Sources */,
 				8465858226CEB8CA00A8B6A7 /* ProfilePackages.swift in Sources */,
+				847F116726D7865E00CDCFA8 /* SearchReposViewModel.swift in Sources */,
+				8468DC4D26D7C6A2005209F0 /* SearchUsersViewModel.swift in Sources */,
 				8465857726CE9D7500A8B6A7 /* ProfileButtonNavigation.swift in Sources */,
 				8465858026CEB87B00A8B6A7 /* ProfileProjects.swift in Sources */,
 				8465857926CE9FF000A8B6A7 /* RepoCard.swift in Sources */,
@@ -351,6 +388,7 @@
 				844A547626D3CBDB00835F25 /* RepoDetailViewModel.swift in Sources */,
 				8465856026CD552100A8B6A7 /* Search.swift in Sources */,
 				8465855E26CD54AF00A8B6A7 /* Home.swift in Sources */,
+				8468DC4B26D7C68A005209F0 /* SearchUsers.swift in Sources */,
 				8465856426CD587D00A8B6A7 /* UserReposCard.swift in Sources */,
 				8465857E26CEB81F00A8B6A7 /* ProfileRepositories.swift in Sources */,
 				8460A1D326D681C10033BDC2 /* SearchButtonNavigation.swift in Sources */,
@@ -358,7 +396,9 @@
 				844A547826D3CBE700835F25 /* RepoDetail.swift in Sources */,
 				846F576126CD04A100B5595B /* nvvm_github_cloneApp.swift in Sources */,
 				8465856826CE52B500A8B6A7 /* UserRepos.swift in Sources */,
+				8468DC4F26D7C9D9005209F0 /* ListOfUsers.swift in Sources */,
 				848DCAA626D5404D00118B95 /* UserInfo.swift in Sources */,
+				847F116326D77E7D00CDCFA8 /* ListOfRepos.swift in Sources */,
 				84CF917E26D39BD5003E6962 /* LanguageRepoColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

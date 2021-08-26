@@ -9,7 +9,6 @@ import SwiftUI
 
 struct Home: View {
     
-    @Binding var goToProfile: Int
     @ObservedObject var viewModel = UserReposViewModel()
     
     var body: some View {
@@ -27,7 +26,7 @@ struct Home: View {
                     }
                     .padding(.top)
                     
-                    UserReposCard(goToProfile: $goToProfile, userRepos: viewModel.userRepos)
+                    UserReposCard(userRepos: viewModel.userRepos)
                     
                     HStack {
                         Text("Recent activity")
@@ -46,6 +45,6 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home(goToProfile: .constant(0))
+        Home()
     }
 }

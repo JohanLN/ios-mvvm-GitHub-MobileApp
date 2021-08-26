@@ -9,7 +9,6 @@ import SwiftUI
 
 struct RepoInfos: View {
     
-    @Binding var goToProfile: Int
     var repoDetail: RepoDetail
     
     var body: some View {
@@ -20,9 +19,7 @@ struct RepoInfos: View {
                     .scaledToFit()
                     .foregroundColor(Color.stroke)
                     .frame(width: 20, height: 20)
-                Button(action: {
-                    self.goToProfile = 2
-                }) {
+                NavigationLink(destination: Profile(username: repoDetail.owner.login)) {
                     Text(repoDetail.owner.login)
                         .font(.system(size: 22))
                         .bold()
@@ -56,6 +53,6 @@ struct RepoInfos: View {
 
 struct RepoInfos_Previews: PreviewProvider {
     static var previews: some View {
-        RepoInfos(goToProfile: .constant(0), repoDetail: RepoDetail(id: 0, name: "", fullName: "", privateRepo: false, owner: RepoDetail.Owner(id: 0, login: "", avatarUrl: ""), description: "", fork: true, repoUrl: "", createdAt: "", updatedAt: "", size: 0, star: 0, language: "", forkCount: 0, sub: 0))
+        RepoInfos(repoDetail: RepoDetail(id: 0, name: "", fullName: "", privateRepo: false, owner: RepoDetail.Owner(id: 0, login: "", avatarUrl: ""), description: "", fork: true, repoUrl: "", createdAt: "", updatedAt: "", size: 0, star: 0, language: "", forkCount: 0, sub: 0))
     }
 }

@@ -9,6 +9,9 @@ import SwiftUI
 
 struct SearchBar: View {
     
+    var searchReposViewModel: SearchReposViewModel
+    var searchUsersViewModel: SearchUsersViweModel
+    var searchIssuesViewModel: SearchIssuesViewModel
     var selected: Int
     @Binding var text: String
     @State private var isEditing = false
@@ -26,7 +29,15 @@ struct SearchBar: View {
     var body: some View {
         VStack {
             ZStack {
-                TextField("Search for \(selectTypeOfSearch())...", text: $text)
+                TextField("Search for \(selectTypeOfSearch())...", text: $text, onCommit: {
+                    if self.selected == 1 {
+                        searchReposViewModel.fetchSearchRepos(repoName: text)
+                    } else if self.selected == 2 {
+                        searchUsersViewModel.fetchSearchUsers(username: text)
+                    } else {
+                        searchIssuesViewModel.fetchSearchIssues(issueName: text)
+                    }
+                })
                     .padding(7)
                     .padding(.horizontal, 25)
                     .background(Color(.systemGray6))
@@ -53,6 +64,6 @@ struct SearchBar: View {
 
 struct SearchBar_Previews: PreviewProvider {
     static var previews: some View {
-        SearchBar(selected: 1, text: .constant("Coucou"))
+        SearchBar(searchReposViewModel: SearchReposViewModel(), searchUsersViewModel: SearchUsersViweModel(), searchIssuesViewModel: SearchIssuesViewModel(), selected: 1, text: .constant("Test"))
     }
 }

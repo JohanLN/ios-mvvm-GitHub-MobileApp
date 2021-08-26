@@ -11,24 +11,11 @@ struct ProfileRepositories: View {
     
     @State private var goToProfile = 0
     var userRepoInfo: UserRepos
-    
-    private func formatDate() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "fr_FR")
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-            
-        let date = dateFormatter.date(from: String(self.userRepoInfo.updatedAt.prefix(10))) ?? Date()
-        
-        if Int((Date().timeIntervalSince(date) / 86400)) > 1 {
-            return "Updated " + String(Int((Date().timeIntervalSince(date) / 86400))) + " days ago."
-        }
-        return "Updated " + String(Int((Date().timeIntervalSince(date) / 86400))) + " day ago."
-    }
         
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 15.0) {
-                NavigationLink(destination: RepoDetailView(goToProfile: $goToProfile, repoName: userRepoInfo.name)) {
+                NavigationLink(destination: RepoDetailView(repoName: userRepoInfo.name)) {
                     Text(userRepoInfo.fullName)
                         .font(.system(size: 15, weight: .bold, design: .rounded))
                         .foregroundColor(Color.clickableText)
@@ -38,7 +25,7 @@ struct ProfileRepositories: View {
                         .foregroundColor(languageRepoColor(language: userRepoInfo.language ?? ""))
                     Text(userRepoInfo.language ?? "")
                         .font(.system(size: 12))
-                    Text(self.formatDate())
+                    Text("Updated " + formatDate(stringDate: self.userRepoInfo.updatedAt))
                         .font(.system(size: 12))
                 }
             }

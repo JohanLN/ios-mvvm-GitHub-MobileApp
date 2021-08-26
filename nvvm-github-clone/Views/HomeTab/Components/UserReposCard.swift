@@ -9,7 +9,6 @@ import SwiftUI
 
 struct UserReposCard: View {
 
-    @Binding var goToProfile: Int
     var userRepos: [UserRepos]
     
     var body: some View {
@@ -18,7 +17,7 @@ struct UserReposCard: View {
                 Color.card
                 VStack(alignment: .leading, spacing: 15.0) {
                     ForEach(userRepos) { repo in
-                        NavigationLink(destination: RepoDetailView(goToProfile: $goToProfile, repoName: repo.name)) {
+                        NavigationLink(destination: RepoDetailView(repoName: repo.name)) {
                             HStack {
                                 Image(systemName: "book.closed")
                                     .foregroundColor(Color.stroke)
@@ -43,6 +42,6 @@ struct UserReposCard: View {
 
 struct UserReposCard_Previews: PreviewProvider {
     static var previews: some View {
-        UserReposCard(goToProfile: .constant(0), userRepos: [UserRepos(id: 0, name: "a repo", fullName: "a long repo", privateRepo: false, repoUrl: "url", description: "Description", language: "HTML", updatedAt: "2020-05-04T09:37:18Z", owner: UserRepos.Owner(id: 0, login: "JohnDoe", avatarUrl: "avatarUrl")), UserRepos(id: 0, name: "a repo", fullName: "a long repo", privateRepo: false, repoUrl: "url", description: "Description", language: "HTML", updatedAt: "2020-05-04T09:37:18Z", owner: UserRepos.Owner(id: 0, login: "JohnDoe", avatarUrl: "avatarUrl"))])
+        UserReposCard(userRepos: [UserRepos(id: 0, name: "a repo", fullName: "a long repo", privateRepo: false, repoUrl: "url", description: "Description", language: "HTML", updatedAt: "2020-05-04T09:37:18Z", owner: UserRepos.Owner(id: 0, login: "JohnDoe", avatarUrl: "avatarUrl")), UserRepos(id: 0, name: "a repo", fullName: "a long repo", privateRepo: false, repoUrl: "url", description: "Description", language: "HTML", updatedAt: "2020-05-04T09:37:18Z", owner: UserRepos.Owner(id: 0, login: "JohnDoe", avatarUrl: "avatarUrl"))])
     }
 }

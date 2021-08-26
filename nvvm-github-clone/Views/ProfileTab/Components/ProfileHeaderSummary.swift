@@ -21,7 +21,7 @@ struct ProfileHeaderSummary: View {
                     .frame(width: 70, height: 70)
                     .clipShape(Circle())
                     .padding()
-                          Text(viewModel.userInfo.login)
+                Text(viewModel.userInfo.login)
                     .foregroundColor(Color.stroke)
                     .font(.system(size: 22, design: .rounded))
                 Spacer()

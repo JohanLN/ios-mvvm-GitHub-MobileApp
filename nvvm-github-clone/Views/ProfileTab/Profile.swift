@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Profile: View {
     
+    var username: String
     @State private var selected = 1
     @ObservedObject var viewModel = UserReposViewModel()
     
@@ -45,6 +46,6 @@ struct Profile: View {
 
 struct Profile_Previews: PreviewProvider {
     static var previews: some View {
-        Profile()
+        Profile(username: "johanln")
     }
 }
