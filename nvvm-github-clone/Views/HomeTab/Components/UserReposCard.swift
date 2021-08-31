@@ -17,7 +17,7 @@ struct UserReposCard: View {
                 Color.card
                 VStack(alignment: .leading, spacing: 15.0) {
                     ForEach(userRepos) { repo in
-                        NavigationLink(destination: RepoDetailView(repoName: repo.name)) {
+                        NavigationLink(destination: RepoDetailView(repoName: repo.name, username: repo.owner.login)) {
                             HStack {
                                 Image(systemName: "book.closed")
                                     .foregroundColor(Color.stroke)

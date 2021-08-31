@@ -20,7 +20,7 @@ struct ListOfRepos: View {
                         HStack {
                             Image(systemName: "book.closed")
                                 .foregroundColor(Color.stroke)
-                            NavigationLink(destination: RepoDetailView(repoName: repo.name)) {
+                            NavigationLink(destination: RepoDetailView(repoName: repo.name, username: repo.owner.login)) {
                                 Text(repo.fullName)
                                     .font(.system(size: 18, weight: .bold))
                                     .foregroundColor(Color.clickableText)
@@ -70,6 +70,6 @@ struct ListOfRepos: View {
 
 struct ListOfRepos_Previews: PreviewProvider {
     static var previews: some View {
-        ListOfRepos(searchRepos: [SearchRepos.Item(id: 1, name: "Test1st", fullName: "Test/Test1st", description: "Fake description.", repoUrl: "Url", updatedAt: "2017-11-07T15:33:44Z", stars: 12, language: "Swift", license: SearchRepos.Item.License(name: "MIT License")), SearchRepos.Item(id: 1, name: "Test1st", fullName: "Test/Test1st", description: "Fake description.", repoUrl: "Url", updatedAt: "2017-11-07T15:33:44Z", stars: 12, language: "Swift", license: SearchRepos.Item.License(name: "MIT License"))])
+        ListOfRepos(searchRepos: [SearchRepos.Item(id: 1, name: "Test1st", fullName: "Test/Test1st", owner: SearchRepos.Item.Owner(id: 1, login: "JohanLn", avatarUrl: ""), description: "Fake description.", repoUrl: "Url", updatedAt: "2017-11-07T15:33:44Z", stars: 12, language: "Swift", license: SearchRepos.Item.License(name: "MIT License")), SearchRepos.Item(id: 1, name: "Test1st", fullName: "Test/Test1st", owner: SearchRepos.Item.Owner(id: 1, login: "JohanLn", avatarUrl: ""), description: "Fake description.", repoUrl: "Url", updatedAt: "2017-11-07T15:33:44Z", stars: 12, language: "Swift", license: SearchRepos.Item.License(name: "MIT License"))])
     }
 }

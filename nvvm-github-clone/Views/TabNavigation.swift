@@ -10,34 +10,29 @@ import SwiftUI
 struct TabNavigation: View {
 
     @State private var tabSelection = 0
+    var githubAccount: String
     
     var body: some View {
         TabView(selection: $tabSelection) {
-            NavigationView {
-                Home()
+                Home(githubAccount: githubAccount)
                     .navigationBarTitle("")
                     .navigationBarHidden(true)
-            }
             .tabItem {
                 Image(systemName: "house.fill")
                 Text("Home")
             }
             .tag(0)
-            NavigationView {
                 Search()
                     .navigationBarTitle("")
                     .navigationBarHidden(true)
-            }
             .tabItem {
                 Image(systemName: "network")
                 Text("Search")
             }
             .tag(1)
-            NavigationView {
-                Profile(username: "johanln")
+                Profile(username: githubAccount)
                     .navigationBarTitle("")
                     .navigationBarHidden(true)
-            }
             .tabItem {
                 Image(systemName: "person.circle.fill")
                 Text("Profile")
@@ -54,6 +49,6 @@ struct TabNavigation: View {
 
 struct TabNavigation_Previews: PreviewProvider {
     static var previews: some View {
-        TabNavigation()
+        TabNavigation(githubAccount: "JohanLN")
     }
 }

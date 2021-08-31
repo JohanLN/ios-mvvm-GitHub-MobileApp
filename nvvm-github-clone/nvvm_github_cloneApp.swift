@@ -11,7 +11,7 @@ import SwiftUI
 struct nvvm_github_cloneApp: App {
     var body: some Scene {
         WindowGroup {
-            TabNavigation()
+            Login()
         }
     }
 }

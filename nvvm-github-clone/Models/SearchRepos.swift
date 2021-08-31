@@ -16,6 +16,7 @@ struct SearchRepos: Codable {
         let id: Int
         let name: String
         let fullName: String
+        let owner: Owner
         let description: String?
         let repoUrl: String
         let updatedAt: String
@@ -23,6 +24,18 @@ struct SearchRepos: Codable {
         let language: String?
         
         let license: License?
+        
+        struct Owner: Codable {
+            let id: Int
+            let login: String
+            let avatarUrl: String
+            
+            enum CodingKeys: String, CodingKey {
+                case id = "id"
+                case login = "login"
+                case avatarUrl = "avatar_url"
+            }
+        }
         
         struct License: Codable {
             
@@ -41,6 +54,7 @@ struct SearchRepos: Codable {
             case id = "id"
             case name = "name"
             case fullName = "full_name"
+            case owner = "owner"
             case description = "description"
             case repoUrl = "url"
             case updatedAt = "updated_at"

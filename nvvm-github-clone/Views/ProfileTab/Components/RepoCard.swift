@@ -18,7 +18,7 @@ struct RepoCard: View {
                 Color.card
                 HStack {
                     VStack(alignment: .leading, spacing: 15.0) {
-                        NavigationLink(destination: RepoDetailView(repoName: userRepo.name)) {
+                        NavigationLink(destination: RepoDetailView(repoName: userRepo.name, username: userRepo.owner.login)) {
                             Text(userRepo.fullName)
                                 .font(.system(size: 15.0, weight: .bold))
                                 .foregroundColor(Color.clickableText)

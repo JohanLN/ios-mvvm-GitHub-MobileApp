@@ -29,6 +29,7 @@
 		8465857E26CEB81F00A8B6A7 /* ProfileRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465857D26CEB81F00A8B6A7 /* ProfileRepositories.swift */; };
 		8465858026CEB87B00A8B6A7 /* ProfileProjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465857F26CEB87B00A8B6A7 /* ProfileProjects.swift */; };
 		8465858226CEB8CA00A8B6A7 /* ProfilePackages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465858126CEB8CA00A8B6A7 /* ProfilePackages.swift */; };
+		846722B826DE6170004C0FD3 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846722B726DE6170004C0FD3 /* Login.swift */; };
 		8468DC4926D79BE9005209F0 /* FormatDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468DC4826D79BE9005209F0 /* FormatDate.swift */; };
 		8468DC4B26D7C68A005209F0 /* SearchUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468DC4A26D7C68A005209F0 /* SearchUsers.swift */; };
 		8468DC4D26D7C6A2005209F0 /* SearchUsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468DC4C26D7C6A2005209F0 /* SearchUsersViewModel.swift */; };
@@ -75,6 +76,7 @@
 		8465857D26CEB81F00A8B6A7 /* ProfileRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRepositories.swift; sourceTree = "<group>"; };
 		8465857F26CEB87B00A8B6A7 /* ProfileProjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProjects.swift; sourceTree = "<group>"; };
 		8465858126CEB8CA00A8B6A7 /* ProfilePackages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePackages.swift; sourceTree = "<group>"; };
+		846722B726DE6170004C0FD3 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		8468DC4826D79BE9005209F0 /* FormatDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatDate.swift; sourceTree = "<group>"; };
 		8468DC4A26D7C68A005209F0 /* SearchUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUsers.swift; sourceTree = "<group>"; };
 		8468DC4C26D7C6A2005209F0 /* SearchUsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUsersViewModel.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				8465857226CE88A300A8B6A7 /* ProfileTab */,
 				8465856E26CE846000A8B6A7 /* HomeTab */,
 				846F577426CD04E400B5595B /* TabNavigation.swift */,
+				846722B726DE6170004C0FD3 /* Login.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				84CF918226D3A4B5003E6962 /* ViewExtension.swift in Sources */,
 				848DCAA826D5405F00118B95 /* UserInfoViewModel.swift in Sources */,
 				8465856626CD609100A8B6A7 /* ClickableCard.swift in Sources */,
+				846722B826DE6170004C0FD3 /* Login.swift in Sources */,
 				847F116526D7857400CDCFA8 /* SearchRepos.swift in Sources */,
 				846F577526CD04E400B5595B /* TabNavigation.swift in Sources */,
 				8465856A26CE530F00A8B6A7 /* APIServices.swift in Sources */,

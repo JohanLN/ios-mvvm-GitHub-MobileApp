@@ -20,14 +20,14 @@ struct RepoBranchesComponent: View {
                 ZStack {
                     Color.card
                     VStack(alignment: .leading) {
-                        ForEach(0 ..< repoBranches.count) { i in
+                        ForEach(repoBranches) { repo in
                             HStack {
-                                if repoBranches[i].protected {
+                                if repo.protected {
                                     Image(systemName: "lock")
                                 } else {
                                     Image(systemName: "lock.open")
                                 }
-                                Text(repoBranches[i].name)
+                                Text(repo.name)
                                     .font(.system(size: 15.0))
                             }
                             .padding(.vertical)

@@ -57,8 +57,9 @@ struct RepoDetail: Codable {
     }
 }
 
-struct RepoBranches: Codable {
+struct RepoBranches: Codable, Identifiable {
     
+    let id = UUID()
     let name: String
     let protected: Bool
 

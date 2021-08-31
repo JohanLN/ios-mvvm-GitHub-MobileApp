@@ -15,7 +15,7 @@ struct ProfileRepositories: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 15.0) {
-                NavigationLink(destination: RepoDetailView(repoName: userRepoInfo.name)) {
+                NavigationLink(destination: RepoDetailView(repoName: userRepoInfo.name, username: userRepoInfo.owner.login)) {
                     Text(userRepoInfo.fullName)
                         .font(.system(size: 15, weight: .bold, design: .rounded))
                         .foregroundColor(Color.clickableText)

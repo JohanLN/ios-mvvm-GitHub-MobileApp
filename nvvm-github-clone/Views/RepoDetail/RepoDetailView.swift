@@ -10,9 +10,13 @@ import SwiftUI
 struct RepoDetailView: View {
     
     @ObservedObject var viewModel: RepoDetailViewModel
+    var repoName: String
+    var username: String
     
-    init(repoName: String) {
-        self.viewModel = RepoDetailViewModel(repoName: repoName)
+    init(repoName: String, username: String) {
+        self.viewModel = RepoDetailViewModel()
+        self.repoName = repoName
+        self.username = username
     }
     
     var body: some View {
@@ -30,12 +34,15 @@ struct RepoDetailView: View {
                 }
             }
         }
+        .onAppear() {
+            viewModel.fetchRepoDetail(username: username, repoName: repoName)
+        }
     }
 }
 
 struct RepoDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        RepoDetailView(repoName: "Mobile-Github")
+        RepoDetailView(repoName: "Mobile-Github", username: "JohanLn")
     }
 }
 

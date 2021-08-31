@@ -8,16 +8,13 @@
 import Foundation
 
 class RepoDetailViewModel: ObservableObject {
-    
-    init(repoName: String) {
-        fetchRepoDetail(repoName: repoName)
-    }
-    
+  
     @Published var repoDetail = RepoDetail(id: 0, name: "Test1st", fullName: "Test/Test1st", privateRepo: true, owner: RepoDetail.Owner(id: 0, login: "Test", avatarUrl: ""), description: "This is a fake repository.", fork: false, repoUrl: "URL", createdAt: "2017-11-07T15:33:44Z", updatedAt: "2017-11-07T15:33:44Z", size: 100, star: 3, language: "Swift", forkCount: 1, sub: 15)
     
     @Published var repoBranches = [RepoBranches(name: "Test1st", protected: false)]
     
     public func fetchRepoDetail(username: String = "johanln", repoName: String) {
+        print("Search for : \(repoName)")
         guard let repoDetailUrl = URL(string: "https://api.github.com/repos/\(username)/\(repoName)") else {
             fatalError("Url is not correct.")
         }
@@ -31,7 +28,7 @@ class RepoDetailViewModel: ObservableObject {
             
         }
         
-        self.fetchRepoBranches(repoName: repoName)
+        self.fetchRepoBranches(username: username, repoName: repoName)
     }
     
     private func fetchRepoBranches(username: String = "johanln", repoName: String) {

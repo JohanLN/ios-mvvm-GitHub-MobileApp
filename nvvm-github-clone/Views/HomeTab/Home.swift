@@ -10,6 +10,7 @@ import SwiftUI
 struct Home: View {
     
     @ObservedObject var viewModel = UserReposViewModel()
+    var githubAccount: String
     
     var body: some View {
         
@@ -40,11 +41,14 @@ struct Home: View {
                 }
             }
         }
+        .onAppear() {
+            viewModel.fetchUserRepos(username: githubAccount)
+        }
     }
 }
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        Home(githubAccount: "JohanLN")
     }
 }

@@ -14,7 +14,6 @@ struct SearchBar: View {
     var searchIssuesViewModel: SearchIssuesViewModel
     var selected: Int
     @Binding var text: String
-    @State private var isEditing = false
     
     private func selectTypeOfSearch() -> String {
         if self.selected == 1 {
@@ -42,9 +41,6 @@ struct SearchBar: View {
                     .padding(.horizontal, 25)
                     .background(Color(.systemGray6))
                     .cornerRadius(8)
-                    .onTapGesture {
-                        self.isEditing = true
-                }
                 Image(systemName: "magnifyingglass")
                     .padding(.trailing, 320)
                 if self.text.count > 0 {

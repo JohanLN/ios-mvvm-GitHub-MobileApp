@@ -12,12 +12,13 @@ struct Profile: View {
     var username: String
     @State private var selected = 1
     @ObservedObject var viewModel = UserReposViewModel()
+    @ObservedObject var userViewModel = UserInfoViewModel()
     
     var body: some View {
         ZStack {
             Color.background.ignoresSafeArea()
             ScrollView {
-                ProfileHeaderSummary()
+                ProfileHeaderSummary(userInfo: userViewModel.userInfo)
                 ProfileButtonNavigation(selected: $selected, numberOfRepos: viewModel.userRepos.count)
                     .padding(.vertical)
                 if self.selected == 1 {
@@ -40,6 +41,10 @@ struct Profile: View {
                     ProfilePackages()
                 }
             }
+        }
+        .onAppear() {
+            viewModel.fetchUserRepos(username: username)
+            userViewModel.fetchUserInfo(username: username)
         }
     }
 }
